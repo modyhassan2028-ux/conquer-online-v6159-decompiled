@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>AccountServerBinary2015</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>True</UseWPF>
+    <TargetFramework>net8.0-windows</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="app.xaml" SubType="Designer" Generator="MSBuild:Compile" />
+    <Page Include="mainwindow.xaml" SubType="Designer" Generator="MSBuild:Compile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="Mono.Security">
+      <HintPath>Mono.Security.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
